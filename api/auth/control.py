@@ -75,7 +75,7 @@ class AuthControl(object):
     def send_email(self, email, message):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login("vishwanathavin@gmail.com", "vishwarajini")
+        server.login("*******", "********")
         server.sendmail("jeeves@ynos.in", email, message)
         server.quit()
         return
